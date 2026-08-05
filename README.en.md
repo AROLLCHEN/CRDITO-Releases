@@ -43,8 +43,6 @@ CRDITO is a Windows desktop tool for electronics design workflows. It converts J
   </tr>
 </table>
 
-Every interface image is captured directly from the current application window. The screenshots contain no system pointer, desktop background, or generated UI elements.
-
 ## Practical guides
 
 ### 1. Search and validate a component
