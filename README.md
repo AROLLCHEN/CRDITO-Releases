@@ -27,21 +27,53 @@ CRDITO 是一款面向电子设计流程的 Windows 桌面工具。它将嘉立�
 ## 界面预览
 
 <p align="center">
-  <img src="docs/images/online-schematic-preview.png" width="92%" alt="CRDITO 原理图预览">
+  <img src="docs/images/online-3d-preview-gpu.png" width="92%" alt="CRDITO 3D 模型预览">
 </p>
 
 <table>
   <tr>
     <td width="50%" align="center">
-      <img src="docs/images/online-footprint-preview.png" alt="CRDITO PCB 封装预览"><br>
-      <sub>PCB 封装与焊盘预览</sub>
+      <img src="docs/images/online-component-details.png" alt="CRDITO 器件参数"><br>
+      <sub>器件信息与可复制参数</sub>
     </td>
     <td width="50%" align="center">
-      <img src="docs/images/online-3d-preview-gpu.png" alt="CRDITO 3D 模型预览"><br>
-      <sub>GPU 加速的 STEP 3D 预览</sub>
+      <img src="docs/images/online-footprint-preview.png" alt="CRDITO PCB 封装预览"><br>
+      <sub>PCB 封装与实际焊盘预览</sub>
     </td>
   </tr>
 </table>
+
+所有界面图片均由当前版本窗口直接捕获，不包含系统鼠标、桌面背景或后期生成的界面元素。
+
+## 常用操作指南
+
+### 1. 搜索并校验器件
+
+1. 在顶部选择数据源，在线器件使用“嘉立创EDA在线模型”。
+2. 输入立创编号、MPN、厂商、关键字或封装；需要时启用“有库存”和“有 EDA 模型”筛选。
+3. 点击“搜索”并在左侧选择唯一结果。软件会依次显示“加载中”和“校验中”，完成后再开放导出与放置。
+4. 在标题区核对制造商型号、封装、描述和数据手册。出现校验错误时不要继续导出，可先刷新或改选正确器件。
+
+### 2. 检查原理图、封装和 3D 模型
+
+- 使用“原理图”“PCB 封装”“3D 模型”“参数”选项卡逐项检查，也可以通过“视图 → 四视图”同时比较。
+- 原理图和封装支持滚轮缩放、按住左键拖动画布；3D 模型支持拖动旋转、滚轮缩放以及等轴、顶、底、前、后、左、右视角。
+- 通过“视图 → 显示封装尺寸”查看整体尺寸；通过“工具 → 测量长度”点击两个测量点。测量支持边缘、顶点、中心和水平/垂直吸附，按 `Esc` 退出。
+
+### 3. 导出 Altium 库
+
+1. 在“设置 → 导出原理图默认显示”中选择位号、注释、引脚名称和引脚编号。
+2. 选择器件后点击底部“导出 AD 库”，再选择输出目录。
+3. 等待二进制回读与引脚—焊盘映射校验完成。成功后目录中会包含 `.SchLib`、`.PcbLib`、STEP 和 `.validation.json`。
+
+### 4. 直接放置到 Altium Designer
+
+1. 在 AD 中打开目标工程与原理图文档，并让原理图画布处于可编辑状态。
+2. 在 CRDITO 中点击“放置到 AD”。同一时间只会保留一个待放置任务。
+3. 切换到 AD，在原理图画布内真实点击一次后开始放置；器件会附着到鼠标并使用工程目录中的统一 SchLib/PcbLib 关联封装。
+4. 在“设置 → 按 Esc 时”选择“删除当前器件”或“仅结束放置”，即可控制取消行为。
+
+> 提示：按住 `Ctrl` 点击顶部可配置的菜单项，可以设置快捷键；重复快捷键会在保存前提示冲突。需要连续放置时，可启用“窗口置顶”和“置顶时进入轻量模式”。
 
 ## 核心能力
 

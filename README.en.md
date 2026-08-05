@@ -27,21 +27,53 @@ CRDITO is a Windows desktop tool for electronics design workflows. It converts J
 ## Preview
 
 <p align="center">
-  <img src="docs/images/online-schematic-preview.png" width="92%" alt="CRDITO schematic preview">
+  <img src="docs/images/online-3d-preview-gpu.png" width="92%" alt="CRDITO 3D model preview">
 </p>
 
 <table>
   <tr>
     <td width="50%" align="center">
-      <img src="docs/images/online-footprint-preview.png" alt="CRDITO PCB footprint preview"><br>
-      <sub>PCB footprint and pad preview</sub>
+      <img src="docs/images/online-component-details.png" alt="CRDITO component details"><br>
+      <sub>Component information and copyable parameters</sub>
     </td>
     <td width="50%" align="center">
-      <img src="docs/images/online-3d-preview-gpu.png" alt="CRDITO 3D model preview"><br>
-      <sub>GPU-accelerated STEP 3D preview</sub>
+      <img src="docs/images/online-footprint-preview.png" alt="CRDITO PCB footprint preview"><br>
+      <sub>PCB footprint with final pad geometry</sub>
     </td>
   </tr>
 </table>
+
+Every interface image is captured directly from the current application window. The screenshots contain no system pointer, desktop background, or generated UI elements.
+
+## Practical guides
+
+### 1. Search and validate a component
+
+1. Select a data source at the top. Choose **JLC EDA online model** for online components.
+2. Enter an LCSC part number, MPN, manufacturer, keyword, or package. Enable the stock and EDA-model filters when needed.
+3. Choose one result from the left panel. CRDITO shows loading and validation states and enables export or placement only after both finish.
+4. Confirm the MPN, package, description, and datasheet in the header. Do not export a component with a validation error; refresh or select the correct result first.
+
+### 2. Inspect symbols, footprints, and 3D models
+
+- Use the **Schematic**, **PCB footprint**, **3D model**, and **Parameters** tabs, or choose **View → Quad view** to compare them together.
+- Use the mouse wheel to zoom and left-drag to pan schematic and footprint previews. Drag the 3D model to rotate it, use the wheel to zoom, and select isometric, top, bottom, front, back, left, or right camera presets.
+- Choose **View → Show footprint dimensions** for overall dimensions. Choose **Tools → Measure length**, then click two points. Edge, vertex, center, horizontal, and vertical snapping are available; press `Esc` to leave measurement mode.
+
+### 3. Export Altium libraries
+
+1. Under **Settings → Default schematic export fields**, choose the designator, comment, pin names, and pin numbers to display.
+2. Select a component, choose **Export AD libraries**, and select an output directory.
+3. Wait for binary readback and pin-to-pad mapping validation. A successful export contains `.SchLib`, `.PcbLib`, STEP, and `.validation.json` files.
+
+### 4. Place directly in Altium Designer
+
+1. Open the target project and schematic document in AD and keep the schematic canvas editable.
+2. Choose **Place in AD** in CRDITO. Only one pending placement task is retained at a time.
+3. Switch to AD and make one real click inside the schematic canvas. The component attaches to the pointer and uses the unified SchLib/PcbLib stored with the project.
+4. Under **Settings → When Esc is pressed**, choose whether Esc deletes the current component or only ends placement.
+
+> Tip: hold `Ctrl` and click a configurable top-menu action to assign a shortcut. CRDITO checks for conflicts before saving. For repeated placement, enable **Always on top** and **Enter compact mode when pinned**.
 
 ## Highlights
 
