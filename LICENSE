@@ -1,0 +1,32 @@
+CRDITO Proprietary License
+
+Copyright (c) 2026 AROLLCHEN. All rights reserved.
+
+CRDITO source code, executable files, installers, visual assets, documentation,
+and the CRDITO product name are protected by applicable copyright and other
+intellectual-property laws. Except where a separate written agreement grants a
+right, no person may copy, modify, reverse engineer, decompile, redistribute,
+sell, rent, sublicense, or create derivative works from CRDITO.
+
+Permission is granted to download and use an unmodified official CRDITO release
+for personal or internal business use, subject to this license and all applicable
+laws. This permission does not grant any right to redistribute CRDITO, use the
+CRDITO name or logo to imply endorsement, or remove copyright, license, or
+third-party notices.
+
+CRDITO includes or depends on third-party components. Those components remain
+the property of their respective copyright holders and are provided under their
+own license terms. Their notices and license information are available in
+docs/THIRD-PARTY-NOTICES.md in the source tree and installed application.
+
+LCSC, EasyEDA and Altium Designer are names and marks of their respective
+owners. CRDITO is an independent interoperability tool and is not affiliated
+with, endorsed by, or sponsored by those owners. Component data, symbols,
+footprints, 3D models, datasheets and other content obtained from third-party
+services remain subject to the applicable provider and content-owner terms.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY ARISING
+FROM THE SOFTWARE OR ITS USE.
