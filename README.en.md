@@ -70,7 +70,7 @@ Every interface image is captured directly from the current application window. 
 
 1. Open the target project and schematic document in AD and keep the schematic canvas editable.
 2. Choose **Place in AD** in CRDITO. Only one pending placement task is retained at a time.
-3. Switch to AD and make one real click inside the schematic canvas. The component attaches to the pointer and uses the unified SchLib/PcbLib stored with the project.
+3. Switch to AD and double-click inside the schematic canvas to begin placement. The component attaches to the pointer and uses the unified SchLib/PcbLib stored with the project.
 4. Under **Settings → When Esc is pressed**, choose whether Esc deletes the current component or only ends placement.
 
 > Tip: hold `Ctrl` and click a configurable top-menu action to assign a shortcut. CRDITO checks for conflicts before saving. For repeated placement, enable **Always on top** and **Enter compact mode when pinned**.
