@@ -18,7 +18,7 @@
     <img src="https://img.shields.io/badge/license-Proprietary-555?style=flat-square" alt="Proprietary license">
   </p>
   <p>
-    <a href="https://github.com/AROLLCHEN/CRDITO-Releases/releases/download/v1.0.9/CRDITO-Setup-1.0.9-win-x64.exe"><strong>Download CRDITO 1.0.9</strong></a>
+    <a href="https://github.com/AROLLCHEN/CRDITO-Releases/releases/download/v1.0.10/CRDITO-Setup-1.0.10-win-x64.exe"><strong>Download CRDITO 1.0.10</strong></a>
     ·
     <a href="https://github.com/AROLLCHEN/CRDITO-Releases/releases/latest">Release notes</a>
   </p>

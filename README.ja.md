@@ -18,7 +18,7 @@
     <img src="https://img.shields.io/badge/license-Proprietary-555?style=flat-square" alt="プロプライエタリライセンス">
   </p>
   <p>
-    <a href="https://github.com/AROLLCHEN/CRDITO-Releases/releases/download/v1.0.9/CRDITO-Setup-1.0.9-win-x64.exe"><strong>CRDITO 1.0.9 をダウンロード</strong></a>
+    <a href="https://github.com/AROLLCHEN/CRDITO-Releases/releases/download/v1.0.10/CRDITO-Setup-1.0.10-win-x64.exe"><strong>CRDITO 1.0.10 をダウンロード</strong></a>
     ·
     <a href="https://github.com/AROLLCHEN/CRDITO-Releases/releases/latest">リリースノート</a>
   </p>
