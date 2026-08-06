@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <title>CRDITO application icon for dark backgrounds</title>
+  <g transform="translate(15.5 0) translate(128 128) scale(1.15) translate(-128 -128)">
+    <path d="M174 77c-15-14-34-21-55-21-39 0-68 31-68 72s29 72 68 72c21 0 40-7 55-21"
+        fill="none" stroke="#EDF2F5" stroke-width="27" stroke-linecap="round"/>
+    <circle cx="168" cy="128" r="15" fill="#5FA9D6"/>
+  </g>
+</svg>

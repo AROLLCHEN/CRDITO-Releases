@@ -1,5 +1,9 @@
 <div align="center">
-  <img src="src/Lcsc2Ad.App/Assets/Crdito.svg" width="104" height="104" alt="CRDITO Logo">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="src/Lcsc2Ad.App/Assets/Crdito-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="src/Lcsc2Ad.App/Assets/Crdito.svg">
+    <img src="src/Lcsc2Ad.App/Assets/Crdito.svg" width="104" height="104" alt="CRDITO Logo">
+  </picture>
   <h1>CRDITO</h1>
   <p><strong>连接嘉立创 / LCSC 与 Altium Designer 的器件库工具</strong></p>
   <p>搜索、校验并预览器件，一键导出或直接放置到 Altium Designer。</p>

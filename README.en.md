@@ -1,5 +1,9 @@
 <div align="center">
-  <img src="src/Lcsc2Ad.App/Assets/Crdito.svg" width="104" height="104" alt="CRDITO Logo">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="src/Lcsc2Ad.App/Assets/Crdito-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="src/Lcsc2Ad.App/Assets/Crdito.svg">
+    <img src="src/Lcsc2Ad.App/Assets/Crdito.svg" width="104" height="104" alt="CRDITO Logo">
+  </picture>
   <h1>CRDITO</h1>
   <p><strong>A component-library bridge between JLC / LCSC and Altium Designer</strong></p>
   <p>Search, validate, preview, export, and place components directly into Altium Designer.</p>
