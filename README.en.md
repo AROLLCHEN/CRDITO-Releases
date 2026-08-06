@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="src/Lcsc2Ad.App/Assets/Crdito.png" width="104" alt="CRDITO Logo">
+  <img src="src/Lcsc2Ad.App/Assets/Crdito.svg" width="104" height="104" alt="CRDITO Logo">
   <h1>CRDITO</h1>
   <p><strong>A component-library bridge between JLC / LCSC and Altium Designer</strong></p>
   <p>Search, validate, preview, export, and place components directly into Altium Designer.</p>
@@ -57,6 +57,7 @@ CRDITO is a Windows desktop tool for electronics design workflows. It converts J
 - Use the **Schematic**, **PCB footprint**, **3D model**, and **Parameters** tabs, or choose **View → Quad view** to compare them together.
 - Use the mouse wheel to zoom and left-drag to pan schematic and footprint previews. Drag the 3D model to rotate it, use the wheel to zoom, and select isometric, top, bottom, front, back, left, or right camera presets.
 - Choose **View → Show footprint dimensions** for overall dimensions. Choose **Tools → Measure length**, then click two points. Edge, vertex, center, horizontal, and vertical snapping are available; press `Esc` to leave measurement mode.
+- In compact mode, the component header shows a **Datasheet** entry between the component details and validation state. It appears only for valid links and opens the document with the default browser.
 
 ### 3. Export Altium libraries
 
@@ -69,9 +70,10 @@ CRDITO is a Windows desktop tool for electronics design workflows. It converts J
 1. Open the target project and schematic document in AD and keep the schematic canvas editable.
 2. Choose **Place in AD** in CRDITO. Only one pending placement task is retained at a time.
 3. Switch to AD and double-click inside the schematic canvas to begin placement. The component attaches to the pointer and uses the unified SchLib/PcbLib stored with the project.
-4. Under **Settings → When Esc is pressed**, choose whether Esc deletes the current component or only ends placement.
+4. To repeat the same component, enable **Continuous placement of the same component** under **Settings**. Each confirmed placement creates the next pending component; press `Esc` to stop.
+5. Under **Settings → When Esc is pressed**, choose whether Esc deletes the current component or only ends placement.
 
-> Tip: hold `Ctrl` and click a configurable top-menu action to assign a shortcut. CRDITO checks for conflicts before saving. For repeated placement, enable **Always on top** and **Enter compact mode when pinned**.
+> Tip: hold `Ctrl` and click a configurable top-menu action to assign a shortcut. CRDITO checks for conflicts before saving. **Always on top** and **Enter compact mode when pinned** keep selection and repeated placement in a compact workspace.
 
 ## Highlights
 
@@ -81,6 +83,7 @@ CRDITO is a Windows desktop tool for electronics design workflows. It converts J
 | Consistent preview | Render symbols, PCB footprints, and 3D models with the same conversion rules used for export |
 | Native library export | Generate `.SchLib`, `.PcbLib`, STEP, and machine-readable validation reports without launching AD |
 | Direct placement | Create a placement task in CRDITO and place it on the active AD schematic with a linked unified footprint library |
+| Continuous placement | Optionally create the next placement of the same component after each confirmation; press `Esc` to stop |
 | Strict validation | Check pins, pads, slots, custom pads, multi-unit symbols, model mapping, and binary library readback |
 | Responsive inspection | Four-view layout, smooth zoom, measurement tools, camera presets, and cached meshes for large STEP files |
 
